@@ -2,7 +2,7 @@
     font-family: 'Circular Std';
     src: url('CircularStd-Medium.eot');
     src: local('Circular Std Medium'), local('CircularStd-Medium'),
-        url('/fonts/circular-std/CircularStd-Medium.woff2') format('woff2');
+        url('./fonts/circular-std/CircularStd-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
 }
