@@ -77,12 +77,13 @@ body.lock {
 }
 .main-menu__mobile {
     visibility: hidden;
+    overflow-y: auto;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 100px 50px;
+    padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -100,7 +101,7 @@ body.lock {
     color: #000C2D;
     transition: .2s ease;
 }
-.main-menu__item--to-mobile::before {
+.main-menu__container>.main-menu__item--to-mobile::before {
     content: "";
     display: block;
     height: 1px;
@@ -114,7 +115,7 @@ body.lock {
 .main-menu__item--to-mobile:hover {
     transform: scale(1.1);
 }
-.main-menu__item--to-mobile:hover::before {
+.main-menu__container>.main-menu__item--to-mobile:hover::before {
     content: "";
     display: block;
     height: 1px;
