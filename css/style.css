@@ -1,9 +1,19 @@
 @font-face {
     font-family: 'Circular Std';
-    src: url('CircularStd-Medium.eot');
-    src: local('Circular Std Medium'), local('CircularStd-Medium'),
-        url('../fonts/circular-std/CircularStd-Medium.woff2') format('woff2');
+    src: url('../fonts/circular-std/CircularStd-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular-std/CircularStd-Medium.woff2') format('woff2');
     font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular-std/CircularStd-Bold.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -15,6 +25,16 @@
 
 body {
     font-family: 'Circular Std';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 16px;
+    transition: .3s ease;
 }
 
 .wrapper {
@@ -100,13 +120,8 @@ body {
 }
 .main-menu__button {
     padding: 12px 23px;
-    display: block;
-    white-space: nowrap;
-    text-decoration: none;
-    font-size: 16px;
     color: #2F70FE;
     border: 1px solid #2F70FE;
-    transition: .3s ease;
 }
 .main-menu__button:hover {
     background-color: #2F70FE;
@@ -155,6 +170,47 @@ body {
 }
 
 
+/* intro */
+.intro {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    background: url('../img/intro.jpg') top center / cover no-repeat;
+}
+.intro__container {
+    width: 630px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.intro__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+.intro__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 10px 0 30px;
+}
+.intro__button {
+    padding: 16px 25px;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+}
+.intro__button:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+
 /* Media */
 
 /* Large devices (desktops, less than 1200px) */
@@ -199,6 +255,11 @@ body {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    /* intro */
+    .intro__title {
+        font-size: 40px;
+        line-height: 55px;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -217,5 +278,11 @@ body {
     /* main-menu */
     .main-menu__container {
         justify-content: flex-end;
+    }
+
+    /* intro */
+    .intro__title {
+        font-size: 35px;
+        line-height: 50px;
     }
 }
