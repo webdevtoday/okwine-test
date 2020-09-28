@@ -282,13 +282,80 @@ body.lock {
     width: 120px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 70px;
 }
 .features__img-abs--second {
     width: 107px;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 70px;
+}
+
+
+/* capabilities */
+.capabilities__container {
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.capabilities__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    margin: 85px 0;
+}
+.capabilities__item:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+.capabilities__info {
+    max-width: 410px;
+    min-width: 250px;
+    margin: 0 10px;
+}
+.capabilities__img {
+    max-width: 420px;
+    min-width: 250px;
+    margin: 0 10px;
+}
+.capabilities__img img {
+    width: 100%;
+    display: block;
+}
+.capabilities__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #181818;
+}
+.capabilities__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    color: #000C2D;
+    margin: 24px 0;
+}
+.capabilities__link {
+    display: flex;
+    align-items: center;
+    color: #2F70FE;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+}
+.capabilities__icon {
+    width: 24px;
+    height: 24px;
+    fill: #2F70FE;
+    margin-left: 8px;
 }
 
 
@@ -341,6 +408,12 @@ body.lock {
         font-size: 40px;
         line-height: 55px;
     }
+
+
+    /* capabilities */
+    .capabilities__title {
+        font-size: 24px;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -383,5 +456,14 @@ body.lock {
     }
     .features__img-abs {
         display: none;
+    }
+
+
+    /* capabilities */
+    .capabilities__item:nth-of-type(odd) {
+        flex-direction: column;
+    }
+    .capabilities__item {
+        flex-direction: column;
     }
 }
