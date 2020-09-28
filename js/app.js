@@ -11,5 +11,6 @@ document.addEventListener("DOMContentLoaded", function(){
     burger.addEventListener("click", () => {
         burger.classList.toggle('burger--active');
         mainMenuMobile.classList.toggle('main-menu__mobile--active');
+        document.body.classList.toggle('lock');
     });
 });
