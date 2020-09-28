@@ -528,7 +528,10 @@ body.lock {
 
 
     /* footer */
+    .footer__container {
+        flex-direction: column;
+    }
     .footer__link-list {
-        margin: 25px 14px;
+        margin: 25px 0;
     }
 }
