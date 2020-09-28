@@ -523,6 +523,7 @@ body.lock {
     }
     .capabilities__item {
         flex-direction: column;
+        margin: 30px 0;
     }
 
 
